@@ -1,0 +1,69 @@
+use v6.c;
+unit module Acme::Text::UpsideDown:ver<0.0.1>:auth<cpan:ELIZABETH>;
+
+my constant $rot000 = Q｢!"&'(),.12345679;<>?ABCDEFGJKLMPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}｣;
+
+my constant $rot180 = Q｢¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃpƎℲ⅁ᒋ丬ᒣWԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{｣;
+
+sub upsidedown(Str:D $string) is export {
+    $string.split("\n").map( *.trans( $rot000 => $rot180 ).flip ).join("\n")
+}
+sub uʍopǝpᴉsdn(Str:D $string) is export {
+    $string.split("\n").map( *.trans( $rot180 => $rot000 ).flip ).join("\n")
+}
+
+=begin pod
+
+=head1 NAME
+
+Acme::Text::UpsideDown - provide logic to turn ASCII text upside-down
+
+=head1 SYNOPSIS
+
+=begin code :lang<perl6>
+
+  use Acme::Text::UpsideDown;
+
+  say upsidedown "The quick brown fox jumps over the lazy dog";
+  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+
+  say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+  # The quick brown fox jumps over the lazy Dog
+
+=end code
+
+=head1 DESCRIPTION
+
+Acme::Text::UpsideDown provides two subroutines that can be used to create
+strings from ASCII texts for upside-down reading.  Inspired by the Perl 5
+version called Acme::Text::Viceversa.
+
+=head1 SUBROUTINES
+
+=head2 upsidedown
+
+  say upsidedown "The quick brown fox jumps over the lazy dog";
+  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+
+Return the string that allows reading of the given ASCII string upside-down.
+
+=head2 uʍopǝpᴉsdn
+
+  say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+  # The quick brown fox jumps over the lazy Dog
+
+Return the string that allows normal reading of a previously upside-downed
+string.
+
+=head1 AUTHOR
+
+Elizabeth Mattijsen <liz@wenzperl.nl>
+
+=head1 COPYRIGHT AND LICENSE
+
+Original Perl 5 version of Acme::Text::Viceversa: Copyright 2019 吉田勇気,
+Perl 6 re-imagining: Copyright 2019 Elizabeth Mattijsen
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+=end pod
