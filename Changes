@@ -2,6 +2,9 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.3  2019-10-01T13:44:04+02:00
+    - .lines reads better and is faster than the perl5-ish .split("\n")
+
 0.0.2  2019-10-01T13:31:56+02:00
     - Make sure multi-line texts are also properly reversed
 
