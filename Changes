@@ -2,5 +2,8 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.2  2019-10-01T13:31:56+02:00
+    - Make sure multi-line texts are also properly reversed
+
 0.0.1  2019-10-01T13:22:02+02:00
     - Initial version

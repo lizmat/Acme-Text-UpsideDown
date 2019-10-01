@@ -1,15 +1,15 @@
 use v6.c;
-unit module Acme::Text::UpsideDown:ver<0.0.1>:auth<cpan:ELIZABETH>;
+unit module Acme::Text::UpsideDown:ver<0.0.2>:auth<cpan:ELIZABETH>;
 
 my constant $rot000 = Q｢!"&'(),.12345679;<>?ABCDEFGJKLMPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}｣;
 
 my constant $rot180 = Q｢¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃpƎℲ⅁ᒋ丬ᒣWԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{｣;
 
 sub upsidedown(Str:D $string) is export {
-    $string.split("\n").map( *.trans( $rot000 => $rot180 ).flip ).join("\n")
+    $string.split("\n").map( *.trans( $rot000 => $rot180 ).flip ).reverse.join("\n")
 }
 sub uʍopǝpᴉsdn(Str:D $string) is export {
-    $string.split("\n").map( *.trans( $rot180 => $rot000 ).flip ).join("\n")
+    $string.split("\n").map( *.trans( $rot180 => $rot000 ).flip ).reverse.join("\n")
 }
 
 =begin pod
