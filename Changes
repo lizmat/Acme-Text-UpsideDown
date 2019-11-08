@@ -2,6 +2,9 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.4  2019-11-08T23:15:34+01:00
+    - change reference of Perl 6 to Raku, and Perl 5 to Perl
+
 0.0.3  2019-10-01T13:44:04+02:00
     - .lines reads better and is faster than the perl5-ish .split("\n")
 

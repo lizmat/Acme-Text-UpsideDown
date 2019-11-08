@@ -19,7 +19,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-Acme::Text::UpsideDown provides two subroutines that can be used to create strings from ASCII texts for upside-down reading. Inspired by the Perl 5 version called Acme::Text::Viceversa.
+Acme::Text::UpsideDown provides two subroutines that can be used to create strings from ASCII texts for upside-down reading. Inspired by the Perl version called Acme::Text::Viceversa.
 
 SUBROUTINES
 ===========
@@ -48,7 +48,7 @@ Elizabeth Mattijsen <liz@wenzperl.nl>
 COPYRIGHT AND LICENSE
 =====================
 
-Original Perl 5 version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Perl 6 re-imagining: Copyright 2019 Elizabeth Mattijsen
+Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
