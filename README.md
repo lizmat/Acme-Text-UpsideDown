@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/Acme-Text-UpsideDown/workflows/test/badge.svg)](https://github.com/lizmat/Acme-Text-UpsideDown/actions)
+
 NAME
 ====
 
@@ -6,7 +8,7 @@ Acme::Text::UpsideDown - provide logic to turn ASCII text upside-down
 SYNOPSIS
 ========
 
-```perl6
+```raku
   use Acme::Text::UpsideDown;
 
   say upsidedown "The quick brown fox jumps over the lazy dog";
@@ -43,12 +45,12 @@ Return the string that allows normal reading of a previously upside-downed strin
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 COPYRIGHT AND LICENSE
 =====================
 
-Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019 Elizabeth Mattijsen
+Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

@@ -1,21 +1,26 @@
 {
-  "api" : "perl6",
-  "auth" : "cpan:ELIZABETH",
-  "authors" : [
+  "api": "perl6",
+  "auth": "zef:lizmat",
+  "authors": [
     "Elizabeth Mattijsen"
   ],
-  "build-depends" : [ ],
-  "depends" : [ ],
-  "description" : "provide logic to turn ASCII text upside-down",
-  "license" : "Artistic-2.0",
-  "name" : "Acme::Text::UpsideDown",
-  "perl" : "6.c",
-  "provides" : {
-    "Acme::Text::UpsideDown" : "lib/Acme/Text/UpsideDown.pm6"
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "provide logic to turn ASCII text upside-down",
+  "license": "Artistic-2.0",
+  "name": "Acme::Text::UpsideDown",
+  "perl": "6.c",
+  "provides": {
+    "Acme::Text::UpsideDown": "lib/Acme/Text/UpsideDown.rakumod"
   },
-  "resources" : [ ],
-  "source-url" : "https://github.com/lizmat/Acme-Text-UpsideDown.git",
-  "tags" : [ ],
-  "test-depends" : [ ],
-  "version" : "0.0.4"
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/Acme-Text-UpsideDown.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.5"
 }

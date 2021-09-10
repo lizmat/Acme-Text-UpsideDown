@@ -1,5 +1,5 @@
-use v6.c;
-unit module Acme::Text::UpsideDown:ver<0.0.4>:auth<cpan:ELIZABETH>;
+use v6.*;
+unit module Acme::Text::UpsideDown:ver<0.0.5>:auth<zef:lizmat>;
 
 my constant $rot000 = Q｢!"&'(),.12345679;<>?ABCDEFGJKLMPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}｣;
 
@@ -20,7 +20,7 @@ Acme::Text::UpsideDown - provide logic to turn ASCII text upside-down
 
 =head1 SYNOPSIS
 
-=begin code :lang<perl6>
+=begin code :lang<raku>
 
   use Acme::Text::UpsideDown;
 
@@ -57,12 +57,12 @@ string.
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 =head1 COPYRIGHT AND LICENSE
 
 Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気,
-Raku re-imagining: Copyright 2019 Elizabeth Mattijsen
+Raku re-imagining: Copyright 2019, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

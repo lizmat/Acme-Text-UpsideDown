@@ -2,6 +2,12 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.5  2021-09-10T10:13:40+02:00
+    - Change file extension to .rakumod
+    - Migrate to zef ecosystem
+    - Update email address
+    - Update copyright year
+
 0.0.4  2019-11-08T23:15:34+01:00
     - change reference of Perl 6 to Raku, and Perl 5 to Perl
 
