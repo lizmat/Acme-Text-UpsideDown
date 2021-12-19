@@ -1,16 +1,16 @@
-use v6.*;
-unit module Acme::Text::UpsideDown:ver<0.0.5>:auth<zef:lizmat>;
+my constant $up =
+  Q｢!"&'(),.12345679;<>?ABCDEFGJKLMPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}⁅⁆∵∴⁀‿｣;
 
-my constant $rot000 = Q｢!"&'(),.12345679;<>?ABCDEFGJKLMPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}｣;
+my constant $down =
+  Q｢¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃ◖ƎℲ⅁ᒋ丬ᒣWԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{⁆⁅∴∵‿⁀｣;
 
-my constant $rot180 = Q｢¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃpƎℲ⅁ᒋ丬ᒣWԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{｣;
+my constant $from = $up ~ $down;
+my constant $to   = $down ~ $up;
 
-sub upsidedown(Str:D $string) is export {
-    $string.lines.map( *.trans( $rot000 => $rot180 ).flip ).reverse.join("\n")
+my sub upsidedown(Str:D $string) is export {
+    $string.lines.map( *.trans( $from => $to ).flip ).reverse.join("\n")
 }
-sub uʍopǝpᴉsdn(Str:D $string) is export {
-    $string.lines.map( *.trans( $rot180 => $rot000 ).flip ).reverse.join("\n")
-}
+my constant &uʍopǝpᴉsdn is export = &upsidedown;
 
 =begin pod
 
@@ -42,18 +42,42 @@ version called Acme::Text::Viceversa.
 
 =head2 upsidedown
 
+=begin code :lang<raku>
+
   say upsidedown "The quick brown fox jumps over the lazy dog";
   # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
-Return the string that allows reading of the given ASCII string upside-down.
+  say upsidedown "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+  # The quick brown fox jumps over the lazy dog
+
+=end code
+
+Return the string that allows reading of the given ASCII string upside-down,
+and vice-versa.
 
 =head2 uʍopǝpᴉsdn
 
   say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-  # The quick brown fox jumps over the lazy Dog
+  # The quick brown fox jumps over the lazy dog
+
+  say uʍopǝpᴉsdn "The quick brown fox jumps over the lazy dog";
+  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
 Return the string that allows normal reading of a previously upside-downed
-string.
+string, and vice-versa.  Basically a fun alias for C<upsidedown>.
+
+=head1 COMMAND LINE INTERFACE
+
+This module also installs a C<ud> script for easy upsidedowning of text.
+
+When called without any parameters, it will read from STDIN and print the
+upsidedowned text on STDOUT.
+
+When called with a single parameter that indicates an existing file, then
+it will read that file and print the upsidedowned text on STDOUT.
+
+In all other cases, the command line parameters will be joined together with
+a space, and then printed upsidedowned on STDOUT.
 
 =head1 AUTHOR
 
@@ -67,3 +91,5 @@ Raku re-imagining: Copyright 2019, 2021 Elizabeth Mattijsen
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
 =end pod
+
+# vim: expandtab shiftwidth=4

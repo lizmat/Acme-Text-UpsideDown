@@ -1,0 +1,15 @@
+use Acme::Text::UpsideDown:ver<0.0.6>:auth<zef:lizmat>;
+
+multi sub MAIN() {
+    say upsidedown slurp;
+}
+multi sub MAIN($path) {
+    say upsidedown $path.IO.e
+      ?? $path.IO.slurp
+      !! $path;
+}
+multi sub MAIN(*@_) {
+    say upsidedown @_.join(" ");
+}
+
+# vim: expandtab shiftwidth=4

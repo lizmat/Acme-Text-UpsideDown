@@ -29,18 +29,37 @@ SUBROUTINES
 upsidedown
 ----------
 
-    say upsidedown "The quick brown fox jumps over the lazy dog";
-    # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+```raku
+  say upsidedown "The quick brown fox jumps over the lazy dog";
+  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
-Return the string that allows reading of the given ASCII string upside-down.
+  say upsidedown "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+  # The quick brown fox jumps over the lazy dog
+```
+
+Return the string that allows reading of the given ASCII string upside-down, and vice-versa.
 
 uʍopǝpᴉsdn
 ----------
 
     say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-    # The quick brown fox jumps over the lazy Dog
+    # The quick brown fox jumps over the lazy dog
 
-Return the string that allows normal reading of a previously upside-downed string.
+    say uʍopǝpᴉsdn "The quick brown fox jumps over the lazy dog";
+    # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+
+Return the string that allows normal reading of a previously upside-downed string, and vice-versa. Basically a fun alias for `upsidedown`.
+
+COMMAND LINE INTERFACE
+======================
+
+This module also installs a `ud` script for easy upsidedowning of text.
+
+When called without any parameters, it will read from STDIN and print the upsidedowned text on STDOUT.
+
+When called with a single parameter that indicates an existing file, then it will read that file and print the upsidedowned text on STDOUT.
+
+In all other cases, the command line parameters will be joined together with a space, and then printed upsidedowned on STDOUT.
 
 AUTHOR
 ======

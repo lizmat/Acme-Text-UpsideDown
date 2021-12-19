@@ -2,6 +2,15 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.6  2021-12-19T14:29:19+01:00
+    - Made upsidedown also unupside down upsided down text
+    - Made upsidedown and uʍopǝpᴉsdn aliases of each other
+    - Change upside down version of D to ◖ (LEFT HALF BLACK CIRCLE)
+      to allow for roundtripping.
+    - Added upsidedowning of ⁅⁆∵∴⁀‿
+    - Removed upsidedowning for ^, as there is no good counterpart
+    - Add a CLI called "ut" for easy conversion
+
 0.0.5  2021-09-10T10:13:40+02:00
     - Change file extension to .rakumod
     - Migrate to zef ecosystem
