@@ -4,13 +4,13 @@ use Acme::Text::UpsideDown;
 plan 7;
 
 is upsidedown(
-  "The quick brown fox jumps over the lazy dog"),
-  "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥",
+  "The quick brown fox jumps over the lazy dog 🙂"),
+  "🙃 ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥",
   'did ASCII text get rotated';
 
 is uʍopǝpᴉsdn(
-  "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥"),
-  "The quick brown fox jumps over the lazy dog",
+  "🙃 ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥"),
+  "The quick brown fox jumps over the lazy dog 🙂",
   'did rotated text rotate back ok';
 
 is upsidedown(
