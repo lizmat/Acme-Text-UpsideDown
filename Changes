@@ -2,6 +2,12 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.7  2024-06-24T18:03:57+02:00
+    - Fixed some pod issues
+    - Updated extension on test file
+    - Added sponsoring link and button
+    - Updated copyright year
+
 0.0.6  2021-12-19T14:29:19+01:00
     - Made upsidedown also unupside down upsided down text
     - Made upsidedown and uʍopǝpᴉsdn aliases of each other
@@ -12,13 +18,13 @@ Revision history for Acme-Text-UpsideDown
     - Add a CLI called "ut" for easy conversion
 
 0.0.5  2021-09-10T10:13:40+02:00
-    - Change file extension to .rakumod
-    - Migrate to zef ecosystem
-    - Update email address
-    - Update copyright year
+    - Changed file extension to .rakumod
+    - Migrated to zef ecosystem
+    - Updated email address
+    - Updated copyright year
 
 0.0.4  2019-11-08T23:15:34+01:00
-    - change reference of Perl 6 to Raku, and Perl 5 to Perl
+    - Changed reference of Perl 6 to Raku, and Perl 5 to Perl
 
 0.0.3  2019-10-01T13:44:04+02:00
     - .lines reads better and is faster than the perl5-ish .split("\n")

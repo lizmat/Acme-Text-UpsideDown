@@ -9,13 +9,13 @@ SYNOPSIS
 ========
 
 ```raku
-  use Acme::Text::UpsideDown;
+use Acme::Text::UpsideDown;
 
-  say upsidedown "The quick brown fox jumps over the lazy dog";
-  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+say upsidedown "The quick brown fox jumps over the lazy dog";
+# ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
-  say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-  # The quick brown fox jumps over the lazy Dog
+say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+# The quick brown fox jumps over the lazy Dog
 ```
 
 DESCRIPTION
@@ -30,11 +30,11 @@ upsidedown
 ----------
 
 ```raku
-  say upsidedown "The quick brown fox jumps over the lazy dog";
-  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+say upsidedown "The quick brown fox jumps over the lazy dog";
+# ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
-  say upsidedown "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-  # The quick brown fox jumps over the lazy dog
+say upsidedown "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+# The quick brown fox jumps over the lazy dog
 ```
 
 Return the string that allows reading of the given ASCII string upside-down, and vice-versa.
@@ -42,11 +42,13 @@ Return the string that allows reading of the given ASCII string upside-down, and
 uʍopǝpᴉsdn
 ----------
 
-    say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-    # The quick brown fox jumps over the lazy dog
+```raku
+say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+# The quick brown fox jumps over the lazy dog
 
-    say uʍopǝpᴉsdn "The quick brown fox jumps over the lazy dog";
-    # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+say uʍopǝpᴉsdn "The quick brown fox jumps over the lazy dog";
+# ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+```
 
 Return the string that allows normal reading of a previously upside-downed string, and vice-versa. Basically a fun alias for `upsidedown`.
 
@@ -66,10 +68,14 @@ AUTHOR
 
 Elizabeth Mattijsen <liz@raku.rocks>
 
+Source can be located at: https://github.com/lizmat/Acme-Text-UpsideDown . Comments and Pull Requests are welcome.
+
+If you like this module, or what I’m doing more generally, committing to a [small sponsorship](https://github.com/sponsors/lizmat/) would mean a great deal to me!
+
 COPYRIGHT AND LICENSE
 =====================
 
-Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019, 2021 Elizabeth Mattijsen
+Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019, 2021, 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

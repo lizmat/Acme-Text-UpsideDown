@@ -4,8 +4,6 @@ my constant $up =
 my constant $down =
   Q｢¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃ◖ƎℲ⅁ᒋ丬ᒣWԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{⁆⁅∴∵‿⁀🙃｣;
 
-
-
 my constant $from = $up ~ $down;
 my constant $to   = $down ~ $up;
 
@@ -24,13 +22,13 @@ Acme::Text::UpsideDown - provide logic to turn ASCII text upside-down
 
 =begin code :lang<raku>
 
-  use Acme::Text::UpsideDown;
+use Acme::Text::UpsideDown;
 
-  say upsidedown "The quick brown fox jumps over the lazy dog";
-  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+say upsidedown "The quick brown fox jumps over the lazy dog";
+# ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
-  say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-  # The quick brown fox jumps over the lazy Dog
+say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+# The quick brown fox jumps over the lazy Dog
 
 =end code
 
@@ -46,11 +44,11 @@ version called Acme::Text::Viceversa.
 
 =begin code :lang<raku>
 
-  say upsidedown "The quick brown fox jumps over the lazy dog";
-  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+say upsidedown "The quick brown fox jumps over the lazy dog";
+# ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
 
-  say upsidedown "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-  # The quick brown fox jumps over the lazy dog
+say upsidedown "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+# The quick brown fox jumps over the lazy dog
 
 =end code
 
@@ -59,11 +57,15 @@ and vice-versa.
 
 =head2 uʍopǝpᴉsdn
 
-  say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
-  # The quick brown fox jumps over the lazy dog
+=begin code :lang<raku>
 
-  say uʍopǝpᴉsdn "The quick brown fox jumps over the lazy dog";
-  # ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+say uʍopǝpᴉsdn "ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥";
+# The quick brown fox jumps over the lazy dog
+
+say uʍopǝpᴉsdn "The quick brown fox jumps over the lazy dog";
+# ɓop ʎzɐꞁ ǝɥʇ ɹǝʌo sdɯnſ̣ xoɟ uʍoɹq ʞɔᴉnb ǝɥ⊥
+
+=end code
 
 Return the string that allows normal reading of a previously upside-downed
 string, and vice-versa.  Basically a fun alias for C<upsidedown>.
@@ -85,10 +87,17 @@ a space, and then printed upsidedowned on STDOUT.
 
 Elizabeth Mattijsen <liz@raku.rocks>
 
+Source can be located at: https://github.com/lizmat/Acme-Text-UpsideDown .
+Comments and Pull Requests are welcome.
+
+If you like this module, or what I’m doing more generally, committing to a
+L<small sponsorship|https://github.com/sponsors/lizmat/>  would mean a great
+deal to me!
+
 =head1 COPYRIGHT AND LICENSE
 
 Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気,
-Raku re-imagining: Copyright 2019, 2021 Elizabeth Mattijsen
+Raku re-imagining: Copyright 2019, 2021, 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
