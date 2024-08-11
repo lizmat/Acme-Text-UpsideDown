@@ -2,6 +2,10 @@ Revision history for Acme-Text-UpsideDown
 
 {{$NEXT}}
 
+0.0.8  2024-08-11T11:29:46+02:00
+    - Made the CLI work again
+    - Add separate CI badge for each OS
+
 0.0.7  2024-06-24T18:03:57+02:00
     - Fixed some pod issues
     - Updated extension on test file

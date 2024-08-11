@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/Acme-Text-UpsideDown/workflows/test/badge.svg)](https://github.com/lizmat/Acme-Text-UpsideDown/actions)
+[![Actions Status](https://github.com/lizmat/Acme-Text-UpsideDown/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/Acme-Text-UpsideDown/actions) [![Actions Status](https://github.com/lizmat/Acme-Text-UpsideDown/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/Acme-Text-UpsideDown/actions) [![Actions Status](https://github.com/lizmat/Acme-Text-UpsideDown/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/Acme-Text-UpsideDown/actions)
 
 NAME
 ====
