@@ -1,8 +1,8 @@
 my constant $up =
-  Q｢!"&'(),.12345679;<>?ABCDEFGJKLMPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}⁅⁆∵∴⁀‿🙂｣;
+  Q｢*!"&'(),.12345679;<>?ABCDEFGJKLMNPQRTUVWY][^_`abcdefghijklmnpqrtuvwy{}⁅⁆∵∴⁀‿🙂｣;
 
 my constant $down =
-  Q｢¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃ◖ƎℲ⅁ᒋ丬ᒣWԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{⁆⁅∴∵‿⁀🙃｣;
+  Q｢⁎¡„⅋͵)(‘˙⇂ᘔε⇁⃓ᔕ9L6⋅̕><¿∀ᗺↃ◖ƎℲ⅁ᒋ丬ᒣWᴎԀΌȢ⊥ᑎΛM⅄[]‿‾ ̖ɐqɔpǝɟɓɥᴉſ̣ʞꞁɯudbɹʇnʌʍʎ}{⁆⁅∴∵‿⁀🙃｣;
 
 my constant $from = $up ~ $down;
 my constant $to   = $down ~ $up;
@@ -98,6 +98,9 @@ deal to me!
 
 Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気,
 Raku re-imagining: Copyright 2019, 2021, 2024 Elizabeth Mattijsen
+
+Some additional character mappings taken from
+L<https://github.com/mcsnolte/Text-UpsideDown>.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

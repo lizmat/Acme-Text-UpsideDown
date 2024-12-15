@@ -77,5 +77,7 @@ COPYRIGHT AND LICENSE
 
 Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019, 2021, 2024 Elizabeth Mattijsen
 
+Some additional character mappings taken from [https://github.com/mcsnolte/Text-UpsideDown](https://github.com/mcsnolte/Text-UpsideDown).
+
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
