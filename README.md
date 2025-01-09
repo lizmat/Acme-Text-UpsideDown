@@ -75,7 +75,7 @@ If you like this module, or what I’m doing more generally, committing to a [sm
 COPYRIGHT AND LICENSE
 =====================
 
-Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019, 2021, 2024 Elizabeth Mattijsen
+Original Perl version of Acme::Text::Viceversa: Copyright 2019 吉田勇気, Raku re-imagining: Copyright 2019, 2021, 2024, 2025 Elizabeth Mattijsen
 
 Some additional character mappings taken from [https://github.com/mcsnolte/Text-UpsideDown](https://github.com/mcsnolte/Text-UpsideDown).
 
